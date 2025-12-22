@@ -26,6 +26,7 @@ To run this project, you need a Linux-based environment.
 * IDE: Any IDE is suitable for this project. We preferred to use VS code
 
 [Installing Dependencies on Ubuntu/WSL]
+
 Run the following commands:
    sudo apt update
    sudo apt install openjdk-17-jdk git maven -y
