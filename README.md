@@ -40,12 +40,12 @@ sudo apt install openjdk-17-jdk git maven -y
 
 1. Clone the Repository:
 ```bash
- git clone https://github.com/ctllmp/cs568-reliable-udp.git
+git clone https://github.com/ctllmp/cs568-reliable-udp.git
 ```
 2. Compile the Client:
    Run the following command to change directory to the FileListClient:
 ```bash
-   cd cs568-reliable-udp/FileListClient
+cd cs568-reliable-udp/FileListClient
 ```
    and then run the following command to compile the client code inside the directory:
 ```bash
