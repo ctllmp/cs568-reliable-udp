@@ -28,15 +28,15 @@ To run this project, you need a Linux-based environment.
 [Installing Dependencies on Ubuntu/WSL]
 
 Run the following commands:
-   sudo apt update
-   sudo apt install openjdk-17-jdk git maven -y
+* sudo apt update
+* sudo apt install openjdk-17-jdk git maven -y
 
 ----------------------------------------------------------------
 INSTALLATION & COMPILATION
 ----------------------------------------------------------------
 1. Clone the Repository:
-   git clone https://github.com/streaming-university/public-teaching-rdtp.git
-   cd public-teaching-rdtp/FileListClient
+  * git clone https://github.com/streaming-university/public-teaching-rdtp.git
+  * cd public-teaching-rdtp/FileListClient
 
 2. Place the Client Code:
    Ensure your 'rudp.java' file is located in the 'src/client/' directory.
