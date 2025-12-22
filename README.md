@@ -1,13 +1,13 @@
 # cs568-reliable-udp
 
 
-Reliable Data Transfer Protocol (RDTP) Client
+# Reliable Multi-Path UDP Client (RUDP)
 ================================================================
 
 This project is a client-side implementation of a Reliable Data Transfer Protocol built on top of UDP. Developed for the CS568 - Contemporary Topics in Networking course, the client is designed to download files reliably and efficiently from a server using multi-path transmission (simultaneous connections over two different ports).
 
 ----------------------------------------------------------------
-FEATURES
+## FEATURES
 ----------------------------------------------------------------
 * Multi-Path Downloading: Utilizes two network paths (or ports) simultaneously to maximize throughput (port 5000 and 5001 over Wi-Fi).
 * Reliability over UDP: Implements custom mechanisms for packet loss recovery, retransmission, and flow control (Sliding Window).
@@ -16,7 +16,7 @@ FEATURES
 * Handshake Protocol: Implements a strict request/response handshake (File List -> File Size -> File Data).
 
 ----------------------------------------------------------------
-PREREQUISITES
+## PREREQUISITES
 ----------------------------------------------------------------
 To run this project, you need a Linux-based environment.
 
@@ -32,7 +32,7 @@ Run the following commands:
 * sudo apt install openjdk-17-jdk git maven -y
 
 ----------------------------------------------------------------
-INSTALLATION & COMPILATION
+## INSTALLATION & COMPILATION
 ----------------------------------------------------------------
 1. Clone the Repository:
   * git clone https://github.com/streaming-university/public-teaching-rdtp.git
@@ -47,7 +47,7 @@ INSTALLATION & COMPILATION
   * javac -cp "src:lib/*" src/client/rudp.java
 
 ----------------------------------------------------------------
-USAGE
+## USAGE
 ----------------------------------------------------------------
 
 [1. Setting Up the Server (For Testing)]
@@ -88,7 +88,7 @@ Example (Localhost):
    java -cp "src:lib/*" client.rudp 127.0.0.1:5000 127.0.0.1:5001
 
 ----------------------------------------------------------------
-HOW IT WORKS
+## HOW IT WORKS
 ----------------------------------------------------------------
 1. Initialization: The client starts and asks for the Server IP and Ports.
 2. File List: It sends a Type 1 request to fetch the list of available files.
@@ -97,7 +97,7 @@ HOW IT WORKS
 5. Verification: Once the download is complete, it calculates the MD5 hash of the local file and compares it with the server's hash.
 
 ----------------------------------------------------------------
-IMPORTANT NOTES
+## IMPORTANT NOTES
 ----------------------------------------------------------------
 * Windows Users: Do not run this directly in Command Prompt or PowerShell. The traffic control (TC) mechanisms and network socket behaviors require a Linux kernel. Please use WSL2.
 * Firewall: If using a remote server (AWS), ensure that UDP ports 5000-5001 and TCP port 22 (SSH) are open in the Security Group settings.
