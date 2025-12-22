@@ -44,7 +44,7 @@ INSTALLATION & COMPILATION
 
 3. Compile the Client:
    Run the following command from the FileListClient directory:
-  * javac -cp "src:lib/*" src/client/rudp.java
+   * javac -cp "src:lib/*" src/client/rudp.java
 
 ----------------------------------------------------------------
 USAGE
@@ -66,10 +66,11 @@ If you want to implement this project using WSL/WSL2, follow these steps:
   * chmod 400 rudp.pem
 
 1.3- SSH into your remote server and start two instances in separate terminals:
-   Terminal 1 (Port 5000)
+   
+   Terminal 1 (Port 5000):
    java -cp "target/classes:target/lib/*:conf" server.FileListServer 5000
 
-   Terminal 2 (Port 5001)
+   Terminal 2 (Port 5001):
    java -cp "target/classes:target/lib/*:conf" server.FileListServer 5001
 
 [2. Running the Client]
