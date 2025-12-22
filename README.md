@@ -44,13 +44,14 @@ INSTALLATION & COMPILATION
 
 3. Compile the Client:
    Run the following command from the FileListClient directory:
-   * javac -cp "src:lib/*" src/client/rudp.java
+  * javac -cp "src:lib/*" src/client/rudp.java
 
 ----------------------------------------------------------------
 USAGE
 ----------------------------------------------------------------
 
 [1. Setting Up the Server (For Testing)]
+
 To test the client, you must have the FileListServer running on two separate ports (e.g., 5000 and 5001).
 
 Option A: Remote Server (AWS/VM) - Recommended
@@ -74,6 +75,7 @@ If you want to implement this project using WSL/WSL2, follow these steps:
    java -cp "target/classes:target/lib/*:conf" server.FileListServer 5001
 
 [2. Running the Client]
+
 Open your terminal in the 'FileListClient' directory and run the client by providing the server's IP address and both ports.
 
 Command Format:
