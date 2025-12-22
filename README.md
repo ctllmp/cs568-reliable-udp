@@ -35,14 +35,10 @@ Run the following commands:
 ## INSTALLATION & COMPILATION
 ----------------------------------------------------------------
 1. Clone the Repository:
-  * git clone https://github.com/streaming-university/public-teaching-rdtp.git
+  * git clone https://github.com/ctllmp/cs568-reliable-udp.git
   * cd public-teaching-rdtp/FileListClient
 
-2. Place the Client Code:
-   Ensure your 'rudp.java' file is located in the 'src/client/' directory.
-   Check your 'rudp.java' file from your IDE. If you use VS code, you can simply type "code ." into the terminal (from the FileListClient directory). Don't forget to press Ctrl + S 
-
-3. Compile the Client:
+2. Compile the Client:
    Run the following command from the FileListClient directory:
   * javac -cp "src:lib/*" src/client/rudp.java
 
@@ -59,12 +55,12 @@ Before connecting via SSH, you must secure your private key (.pem file) to avoid
 
 If you want to implement this project using WSL/WSL2, follow these steps:
 
-1.1- Download the rudp.pem file and move it to the desktop. Then fetch it from the desktop. Run this command to do it: 
+1.1- Download the .pem file and move it to the desktop. Then fetch it from the desktop. Run this command to do it: 
   
-  * cp /mnt/c/Users/<YOUR_NAME>/Desktop/rudp.pem .
+  * cp /mnt/c/Users/<YOUR_NAME>/Desktop/<name_of_file>.pem .
 
 1.2- Run this command:
-  * chmod 400 rudp.pem
+  * chmod 400 <name_of_file>.pem
 
 1.3- SSH into your remote server and start two instances in separate terminals:
    
